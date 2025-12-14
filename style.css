@@ -1,0 +1,644 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #2c2c2c;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: transparent;
+    backdrop-filter: none;
+    z-index: 1000;
+    padding: 20px 60px;
+    box-shadow: none;
+    transition: background 0.3s ease, box-shadow 0.3s ease, backdrop-filter 0.3s ease;
+}
+
+header.scrolled,
+header:hover {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+header .logo,
+header .nav-links a {
+    color: white;
+    transition: color 0.3s ease;
+}
+
+header.scrolled .logo,
+header.scrolled .nav-links a,
+header:hover .logo,
+header:hover .nav-links a {
+    color: #2c2c2c;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #2c2c2c;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: opacity 0.3s;
+}
+
+.nav-links a:hover {
+    opacity: 0.6;
+}
+
+.book-btn {
+    background: #2c2c2c;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: background 0.3s;
+}
+
+.book-btn:hover {
+    background: #1a1a1a;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), 
+                url('https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=1600') center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero-content h1 {
+    font-size: 72px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.hero-content p {
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+
+.scroll-indicator {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateX(-50%) translateY(0); }
+    50% { transform: translateX(-50%) translateY(10px); }
+}
+
+/* Feature Cards Carousel */
+.features-carousel {
+    padding: 0;
+    background: #f8f8f8;
+    overflow: hidden;
+}
+
+.carousel-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.carousel-container::-webkit-scrollbar {
+    display: none;
+}
+
+.feature-card {
+    min-width: 100vw;
+    height: 80vh;
+    scroll-snap-align: start;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    padding: 80px;
+}
+
+.feature-content {
+    color: white;
+    max-width: 600px;
+}
+
+.feature-content h3 {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.feature-content h2 {
+    font-size: 48px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.feature-content p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.8;
+}
+
+.carousel-dots {
+    text-align: center;
+    padding: 40px 0;
+    background: #f8f8f8;
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ccc;
+    margin: 0 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.dot.active {
+    background: #2c2c2c;
+}
+
+/* Description Section */
+.description {
+    padding: 120px 60px;
+    max-width: 1400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.description h2 {
+    font-size: 48px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+    line-height: 1.4;
+}
+
+.description p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.9;
+    color: #666;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Second Features Grid */
+.features-grid {
+    background: #f8f8f8;
+    padding: 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.grid-item {
+    position: relative;
+    height: 70vh;
+    overflow: hidden;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+
+.grid-item:hover img {
+    transform: scale(1.05);
+}
+
+.grid-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 60px;
+    background: linear-gradient(transparent, rgba(0,0,0,0.7));
+    color: white;
+}
+
+.grid-overlay h3 {
+    font-size: 32px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.grid-overlay p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+/* Experience Section */
+.experience {
+    padding: 120px 60px;
+    background: white;
+    text-align: center;
+}
+
+.experience h2 {
+    font-size: 48px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.experience-subtitle {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 80px;
+    font-weight: 300;
+}
+
+.experience-card {
+    max-width: 1200px;
+    margin: 0 auto 60px;
+    background: #f8f8f8;
+    border-radius: 0;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.experience-card:hover {
+    transform: translateY(-10px);
+}
+
+.experience-card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.experience-content {
+    padding: 40px;
+    text-align: left;
+}
+
+.experience-content h3 {
+    font-size: 28px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.experience-content p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #666;
+    font-weight: 300;
+}
+
+/* Location Section */
+.location {
+    padding: 120px 60px;
+    background: #f8f8f8;
+}
+
+.location-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.location-text h2 {
+    font-size: 48px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+.location-text p {
+    font-size: 18px;
+    line-height: 1.9;
+    color: #666;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.location-details {
+    font-size: 16px;
+    color: #2c2c2c;
+    margin-top: 40px;
+}
+
+.location-details p {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.location-image {
+    height: 500px;
+    background: url('https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800') center/cover;
+    border-radius: 0;
+}
+
+/* Rooms Section */
+.rooms-section {
+    padding: 120px 60px;
+    background: white;
+}
+
+.rooms-header {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.rooms-header h2 {
+    font-size: 48px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.rooms-header p {
+    font-size: 18px;
+    color: #666;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.rooms-grid {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+}
+
+.room-card {
+    background: white;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.room-card:hover {
+    transform: translateY(-10px);
+}
+
+.room-image {
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.5s;
+}
+
+.room-card:hover .room-image {
+    transform: scale(1.05);
+}
+
+.room-info {
+    padding: 40px;
+    background: #f8f8f8;
+}
+
+.room-category {
+    display: inline-block;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #999;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+
+.room-info h3 {
+    font-size: 32px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    color: #2c2c2c;
+}
+
+.room-info p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 25px;
+    font-weight: 300;
+}
+
+.room-details {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 13px;
+    color: #999;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+
+.room-link {
+    display: inline-block;
+    color: #2c2c2c;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 400;
+    transition: opacity 0.3s;
+}
+
+.room-link:hover {
+    opacity: 0.6;
+}
+
+/* Footer */
+footer {
+    background: #2c2c2c;
+    color: white;
+    padding: 80px 60px 40px;
+}
+
+.footer-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 60px;
+    margin-bottom: 60px;
+}
+
+.footer-section h3 {
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.footer-section p,
+.footer-section a {
+    font-size: 14px;
+    line-height: 2;
+    color: #ccc;
+    text-decoration: none;
+    display: block;
+    font-weight: 300;
+}
+
+.footer-section a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 40px;
+    border-top: 1px solid #444;
+    font-size: 12px;
+    color: #999;
+    letter-spacing: 1px;
+}
+
+/* Footer Map Styles */
+.footer-map-section {
+    margin-bottom: 60px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.footer-map-section iframe {
+    width: 100%;
+    height: 450px;
+    border: none;
+    display: block;
+}
+
+/* Scroll Animation Styles */
+.fade-in {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Smooth transitions for grid items */
+.grid-item {
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header {
+        padding: 20px 30px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero-content h1 {
+        font-size: 42px;
+    }
+
+    .feature-card {
+        padding: 40px;
+    }
+
+    .feature-content h2 {
+        font-size: 32px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .location-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+    }
+
+    .rooms-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .room-image {
+        height: 300px;
+    }
+
+    .room-info {
+        padding: 30px;
+    }
+
+    .footer-map-section iframe {
+        height: 300px;
+    }
+}

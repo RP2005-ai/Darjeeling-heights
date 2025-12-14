@@ -1,0 +1,161 @@
+{
+  "site": {
+    "name": "Darjeeling Heights",
+    "tagline": "Where Mountains Meet Luxury",
+    "description": "A sanctuary perched among the clouds, where every moment is touched by mountain magic",
+    "longDescription": "Nestled in the heart of the Himalayas, our luxury hotel offers an unparalleled escape into natural beauty and refined elegance. Each space has been thoughtfully designed to frame the majestic landscapes while providing intimate comfort and world-class service."
+  },
+  "contact": {
+    "address": {
+      "line1": "Darjeeling Heights",
+      "line2": "Darjeeling, West Bengal",
+      "line3": "India - 734101"
+    },
+    "phone": "+91 XXX XXX XXXX",
+    "email": "info@darjeelingheights.com"
+  },
+  "navigation": [
+    { "label": "Home", "href": "#home" },
+    { "label": "Suites", "href": "#suites" },
+    { "label": "Experiences", "href": "#experiences" },
+    { "label": "Location", "href": "#location" },
+    { "label": "Contact", "href": "#contact" }
+  ],
+  "hero": {
+    "title": "Darjeeling Heights",
+    "subtitle": "Where Mountains Meet Luxury",
+    "backgroundImage": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=1600"
+  },
+  "carousel": [
+    {
+      "category": "Mountain Views",
+      "title": "Panoramic vistas of Kanchenjunga",
+      "description": "Wake up to breathtaking views of the third highest peak in the world, framed perfectly from every window",
+      "image": "https://i2.wp.com/udaanhotels.com/wp-content/uploads/2024/04/kanchenjunga-himalya.jpg?fit=1024%2C768&ssl=1"
+    },
+    {
+      "category": "Tea Garden Experience",
+      "title": "Surrounded by lush tea estates",
+      "description": "Immerse yourself in the heritage of Darjeeling's finest tea plantations, just steps from your room",
+      "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2d/96/59/00/caption.jpg?w=1200&h=-1&s=1"
+    },
+    {
+      "category": "Heritage Architecture",
+      "title": "Colonial charm meets modern comfort",
+      "description": "Experience the elegance of restored colonial architecture with contemporary luxury amenities",
+      "image": "https://media.easemytrip.com/media/Hotel/SHL-19112137767204/Common/CommonTz6Ckq.jpg"
+    },
+    {
+      "category": "Himalayan Wellness",
+      "title": "Rejuvenate mind and body",
+      "description": "Indulge in authentic Himalayan spa treatments and wellness experiences in serene mountain settings",
+      "image": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=1600"
+    }
+  ],
+  "rooms": {
+    "title": "Our Suites",
+    "subtitle": "Discover your perfect mountain sanctuary",
+    "items": [
+      {
+        "category": "Deluxe Mountain View",
+        "name": "Kanchenjunga Suite",
+        "description": "Panoramic views of the world's third highest peak from floor-to-ceiling windows. Features a private balcony, king-sized bed, and luxury marble bathroom.",
+        "size": "65 m²",
+        "bed": "King Bed",
+        "feature": "Private Balcony",
+        "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800"
+      },
+      {
+        "category": "Premium Tea Estate View",
+        "name": "Heritage Garden Suite",
+        "description": "Overlooking lush tea plantations with colonial-inspired interiors. Spacious seating area, antique furnishings, and a clawfoot bathtub with garden views.",
+        "size": "55 m²",
+        "bed": "Queen Bed",
+        "feature": "Garden Terrace",
+        "image": "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800"
+      },
+      {
+        "category": "Luxury Penthouse",
+        "name": "Himalayan Sky Suite",
+        "description": "Our crown jewel with 360-degree mountain views. Two-level penthouse with private rooftop terrace, fireplace, and exclusive butler service.",
+        "size": "120 m²",
+        "bed": "2 Bedrooms",
+        "feature": "Rooftop Terrace",
+        "image": "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800"
+      },
+      {
+        "category": "Classic Comfort",
+        "name": "Misty Valley Room",
+        "description": "Cozy and intimate with valley views through traditional bay windows. Perfect blend of modern amenities and mountain charm with warm wooden interiors.",
+        "size": "45 m²",
+        "bed": "King Bed",
+        "feature": "Bay Windows",
+        "image": "https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=800"
+      }
+    ]
+  },
+  "features": [
+    {
+      "title": "Exquisite Suites",
+      "description": "Rooms designed with warmth and elegance",
+      "image": "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800"
+    },
+    {
+      "title": "Wellness Sanctuary",
+      "description": "Spa and meditation spaces for complete relaxation",
+      "image": "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=800"
+    },
+    {
+      "title": "Private Terraces",
+      "description": "Your personal viewing deck to the Himalayas",
+      "image": "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?w=800"
+    },
+    {
+      "title": "Timeless Design",
+      "description": "Warm woods, natural stone, and mountain-inspired interiors",
+      "image": "https://images.unsplash.com/photo-1615874959474-d609969a20ed?w=800"
+    }
+  ],
+  "experiences": {
+    "title": "Curated Experiences",
+    "subtitle": "Discover the essence of Darjeeling through bespoke activities",
+    "items": [
+      {
+        "title": "Darjeeling Tea Masterclass",
+        "description": "Embark on a journey through the world-renowned tea estates of Darjeeling. Learn the art of tea tasting from expert sommeliers, walk through emerald plantations, and enjoy a private tasting session featuring the finest First Flush varieties.",
+        "image": "https://www.theteashelf.com/cdn/shop/articles/tea-glass-cup-wooden-table-tea-plantations-background_1024x1024.jpg?v=1679396414"
+      }
+    ]
+  },
+  "location": {
+    "title": "In the Heart of Darjeeling",
+    "description1": "Perched at 7,000 feet above sea level, our hotel offers unparalleled access to Darjeeling's most iconic experiences and stunning natural beauty.",
+    "description2": "Rich in colonial history and Himalayan culture, Darjeeling captivates with its misty mornings, world-famous tea gardens, and the legendary toy train that winds through the mountains.",
+    "distances": [
+      { "place": "Bagdogra Airport", "distance": "95 km (3 hours drive)" },
+      { "place": "Darjeeling Railway Station", "distance": "5 km (15 minutes)" },
+      { "place": "Tiger Hill", "distance": "11 km (30 minutes)" }
+    ],
+    "image": "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800",
+    "mapEmbedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11310.696621122937!2d88.26307084886125!3d27.038762937449167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e42eeb482c64a3%3A0xfc92b2c8177944f2!2sDarjeeling%20Clock%20Tower!5e0!3m2!1sen!2sin!4v1764151190473!5m2!1sen!2sin"
+  },
+  "footer": {
+    "quickLinks": [
+      { "label": "Accommodations", "href": "#suites" },
+      { "label": "Experiences", "href": "#experiences" },
+      { "label": "Dining", "href": "#dining" },
+      { "label": "Wellness", "href": "#wellness" }
+    ],
+    "policies": [
+      { "label": "Privacy Policy", "href": "#" },
+      { "label": "Terms & Conditions", "href": "#" },
+      { "label": "Cancellation Policy", "href": "#" },
+      { "label": "FAQ", "href": "#" }
+    ],
+    "newsletter": {
+      "title": "Stay Connected",
+      "description": "Unlock exclusive offers and mountain stories delivered to your inbox."
+    },
+    "copyright": "© 2025 Darjeeling Heights. All rights reserved."
+  }
+}
